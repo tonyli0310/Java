@@ -84,16 +84,13 @@ public class GraphicalLoops extends JPanel {
 			g.fillOval(60*i, 0, 5, 5);
 			
 			g.setColor(Color.blue);
-			g.drawRect(10+10*i, 0, 5, 5);
+			g.drawRect(20+60*i, 0, 5, 5);
 			
 			g.setColor(Color.blue);
-			g.drawPolygon(new int[] {)
+			g.drawPolygon(new int[] {40+60*i, 45+60*i, 50+60*i}, new int[] {10, 0, 0}, 3);
 		}
 	}
 	
-	
-	
-
 	//////////////////////////////////////
 	//////////////////////////////////////
 	
@@ -119,14 +116,12 @@ public class GraphicalLoops extends JPanel {
 	
 	// very simple main method to get the game going
 	public static void main(String[] args) {
-		new GraphicalLoops();
-		//runner.nCircles(5, null);
-		//runner.changeCircles(null);
-		//runner.tenCircles(null);
-		//runner.checkerBoard(null);
-		//runner.geometricPattern(null);
-		
-		
+		GraphicalLoops runner = new GraphicalLoops();
+		runner.nCircles(5, null);
+		runner.changeCircles(null);
+		runner.tenCircles(null);
+		runner.checkerBoard(null);
+		runner.geometricPattern(null);
 	}
  
 	// does complicated stuff to initialize the graphics and key listeners
