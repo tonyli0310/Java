@@ -19,7 +19,7 @@ public class JeopardyBoard {
 	// width and heigh of the display window / height of the score window
 	private int gridWidth = 800, gridHeight = 600, textHeight = 50;
 
-	// number of questions and categories in the jeopardy (questions are columns and categories are rows)
+	// number of questions and categories in the jeopardy (questions are rows and categories are columns)
 	private final int NUMQUESTIONS = 5, NUMCATEGORIES = 5;
 	
 	// score starts at 0 in the beginning of the game
